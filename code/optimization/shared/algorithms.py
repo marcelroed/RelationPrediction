@@ -1,4 +1,4 @@
-from abstract import IOptimizer
+from ..abstract import IOptimizer
 import random
 import numpy as np
 

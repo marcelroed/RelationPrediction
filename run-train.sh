@@ -13,8 +13,10 @@ SETTINGS_PATH=$SCRIPT_DIR"/"$SETTINGS
 
 ARGUMENT_STRING="--settings "$SETTINGS_PATH" --dataset "$DATASET_PATH
 
-source $VIRTUALENV_PATH"/bin/activate"
+# source $VIRTUALENV_PATH"/bin/activate"
 
-$VIRTUALENV_PATH"/bin/python3.5" -u $TRAIN_PATH $ARGUMENT_STRING
+echo "$TRAIN_PATH $ARGUMENT_STRING"
 
-deactivate
+python -u $TRAIN_PATH $ARGUMENT_STRING
+
+# deactivate
